@@ -101,7 +101,7 @@ module Raingrams
         text.gsub!(/\s*\w+:\/\/[\w\/\+_\-,:%\d\.\-\?&=]*\s*/,' ')
       end
 
-      return text.scan(/[^\s\.\?!][^\.\?!]*[\.\?\!]/)
+      return text.scan(/[^\s\.\?!][^\.\?!]*/)
     end
   end
 end
